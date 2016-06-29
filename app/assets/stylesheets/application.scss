@@ -2,3 +2,61 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+// *************************** Barra superior ***************************//
+.top_navbar{
+  margin-bottom: 0;
+}
+body{
+  margin-top: 50px;
+}
+
+//*************************** Barra lateral ****************************//
+
+//$width_sidebar: 250px;
+//.main_container{
+//  margin-left: $width_sidebar;
+//  transition: all 0.5s ease;
+//}
+//.main_container.toggled{
+//  margin-left: 0;
+//}
+//.side_navbar{
+//  position: fixed;
+//  width: $width_sidebar;
+//  height: 100%;
+//  margin-left: 0;
+//  ul{
+//    width: 100%;
+//    li{
+//      width: 100%;
+//    }
+//  }
+//  transition: all 0.5s ease;
+//}
+//.side_navbar.toggled{
+// margin-left: -$width_sidebar;
+//}
+
+$width_sidebar: 250px;
+
+.main_container{
+  margin-left: $width_sidebar;
+}
+.side_navbar{
+  width: $width_sidebar;
+  height: 100%;
+  position: fixed;
+  ul{
+    width: 100%;
+    li{
+      width: 100%;
+    }
+  }
+}
+.main_container.toggled{
+  margin-left: 0;
+}
+.side_navbar.toggled{
+  margin-left: -250px;
+}

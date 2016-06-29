@@ -8,7 +8,10 @@
 </head>
 <body class="<%= controller_name %> <%= action_name %>">
 
-<%= yield %>
-
+  <%= render partial: 'layouts/top_navbar' %>
+  <%= render partial: 'layouts/side_navbar' %>
+  <div class="main_container">
+    <%= yield %>
+  </div>
 </body>
 </html>
